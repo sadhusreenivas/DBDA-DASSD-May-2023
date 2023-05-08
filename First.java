@@ -1,20 +1,13 @@
 public class First{
    	public static void main(String[] args) {
 	
-	java.util.Scanner in = new java.util.Scanner(System.in);
-	System.out.println("Enter a Number");
-	int n = in.nextInt();
-    int a = n;
-	int sum = 0;
-	while(n>0){
+	Student s1 = new Student();
+    s1.setStudent("5001", "Abhi",8.9,"DBDA");
+    s1.getStudent();
 
-		int d = n%10;
-		sum = sum + d*d*d;
-		n = n/10;
-	}
-    if(sum == a)
-    	System.out.println(a+" is Armstrong!");
-    else
-    	System.out.println(a+" is not Armstrong!");
+    Student s2 = new Student();
+    s2.setStudent("9001", "Abhi",8.9,"DASSD");
+    s2.getStudent();
+
 }
 }
