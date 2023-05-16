@@ -1,15 +1,14 @@
-
 package multithreading;
 
-public class First extends Thread{
+public class Second extends Thread{
      Table t;
 
-    public First(Table t) {
+    public Second(Table t) {
         this.t = t;
     }
      
     public void run(){
-        t.printTable(19);
+        t.printTable(17);
     }
     
 }
